@@ -15,18 +15,22 @@
 @property (assign, nonatomic)NSUInteger walls;
 @property (assign, nonatomic)NSUInteger gameLength;
 @property (strong, nonatomic)NSMutableDictionary *tokenStore;
+@property (assign, nonatomic)BOOL isRunning;
+@property (strong, nonatomic)NSString *playerName;
 
 
 -(instancetype)initWithWalls:(NSUInteger)walls;
 
+-(void)inputName;
+-(void)inputWalls;
+-(void)menu;
 -(void)populate;
 -(void)checkTokens;
 -(void)portalJump:(BOOL)puppy;
-
 -(void)runGame;
-//-(void)rollDice;
-//-(void)playerMove; //uses rollDice
--(void)portalRange; //range = index player.health range,
+-(void)restartGame;
+
+//-(void)portalRange; //range = index player.health range,
 
 
 

@@ -14,6 +14,7 @@
 @property (assign, nonatomic) NSUInteger strength;
 @property (assign, nonatomic) NSUInteger progress;
 
+
 -(instancetype)initChaosMage:(NSUInteger)walls;
 
 -(void)move;

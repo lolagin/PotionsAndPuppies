@@ -99,12 +99,12 @@
 -(void)portalJump:(BOOL)puppy{
     if (puppy) {
         NSUInteger puppyMinding =  arc4random_uniform((u_int32_t)self.playerOne.progress);
-        self.playerOne.progress -= puppyMinding;
+        [self.playerOne jumpBack:puppyMinding]; //[self.playerone moveJump]
         NSLog(@"Uh oh, Hydragon is throwing puppies!\nyou catch the terrified young labrador,\nrunning down the mountain until you encounter a wandering dogherder.\n\nThis excursion takes you back %lu places",(unsigned long)puppyMinding);
     }
     else {
             NSUInteger potionBoost =  arc4random_uniform((u_int32_t)(self.gameLength - self.playerOne.progress));
-        self.playerOne.progress += potionBoost;
+        [self.playerOne jump:potionBoost];
         NSLog(@"Hooray, a potion!\nYou guzzle down the warm bitter mystery and feel refreshed\nYou rush up the mountain like a goat with something to prove.\n\nThis effort sends you forward %lu places",(unsigned long)potionBoost);
     }
 }

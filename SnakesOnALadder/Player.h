@@ -18,7 +18,8 @@
 -(instancetype)initChaosMage:(NSUInteger)walls;
 
 -(void)move;
-
+-(void)jump:(NSUInteger)move;
+-(void)jumpBack:(NSUInteger)move;
 
 
 

@@ -34,8 +34,18 @@
         self.xCord = (self.xCord - self.walls);
         self.yCord++;
     }
-    
-    
+}
+
+-(void)jump:(NSUInteger)move{
+    self.xCord += move % self.walls;
+    self.yCord += move/self.walls;
+    self.progress += move;
+
+}
+-(void)jumpBack:(NSUInteger)move{
+    self.xCord -= move % self.walls;
+    self.yCord -= move/self.walls;
+    self.progress -= move;
     
 }
 

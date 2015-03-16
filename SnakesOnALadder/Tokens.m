@@ -13,14 +13,18 @@
     self = [super init];
     if (self){
         
-        self.xCord =  arc4random_uniform((u_int32_t)wallIn) + 1;
-        self.yCord =  arc4random_uniform((u_int32_t)wallIn) + 1;
+//        self.xCord =  arc4random_uniform((u_int32_t)wallIn) + 1;
+//        self.yCord =  arc4random_uniform((u_int32_t)wallIn) + 1;
         self.walls = wallIn;
+        self.placement = arc4random_uniform((u_int32_t)(wallIn * wallIn));
         
         
 //        array wtih enumerator to loop through and generate at interval
     }
     return self;
 }
+
+
+
 
 @end

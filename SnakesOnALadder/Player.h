@@ -10,12 +10,18 @@
 #import "Tokens.h"
 
 @interface Player : Tokens
-@property (assign, nonatomic) NSUInteger walls;
-@property (assign, nonatomic) NSUInteger xCord;
-@property (assign, nonatomic) NSUInteger yCord;
 @property (assign, nonatomic) NSUInteger health;
 @property (assign, nonatomic) NSUInteger strength;
+@property (assign, nonatomic) NSUInteger progress;
 
 -(instancetype)initChaosMage:(NSUInteger)walls;
+
+-(void)move;
+
+
+
+
+
+
 
 @end

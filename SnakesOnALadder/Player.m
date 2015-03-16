@@ -20,11 +20,27 @@
         self.yCord = 0;
         self.health = 100;
         self.strength = 4;
-        
+        self.progress = 0;
     }
-
     return self;
 }
+-(void)move{
+
+    NSUInteger roll = arc4random_uniform(7);
+    self.progress += roll;
+    NSLog(@"You rolled a %lu",(unsigned long)roll);
+    self. xCord += roll;
+    if (self.xCord > self.walls){
+        self.xCord = (self.xCord - self.walls);
+        self.yCord++;
+    }
+    
+    
+    
+}
+
+
+
 
 
 @end

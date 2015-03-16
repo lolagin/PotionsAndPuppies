@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "RunningGame.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-    
+        NSLog(@"welcome to snakes on a ladder!\n\nI mean...\nPotions and Puppies.\nIt will make sense, and it is funnier.");
+        RunningGame *theGame = [[RunningGame alloc]initWithWalls:5];
+        [theGame runGame];
     
     
     }

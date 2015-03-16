@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6D7306301AB555B100810849 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D73062F1AB555B100810849 /* main.m */; };
+		6D7306381AB5816D00810849 /* Tokens.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7306371AB5816D00810849 /* Tokens.m */; };
+		6D73063B1AB5820300810849 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D73063A1AB5820300810849 /* Player.m */; };
+		6D7306411AB64EEA00810849 /* RunningGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7306401AB64EEA00810849 /* RunningGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		6D73062C1AB555B100810849 /* SnakesOnALadder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SnakesOnALadder; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D73062F1AB555B100810849 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D7306361AB5816D00810849 /* Tokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tokens.h; sourceTree = "<group>"; };
+		6D7306371AB5816D00810849 /* Tokens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tokens.m; sourceTree = "<group>"; };
+		6D7306391AB5820300810849 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		6D73063A1AB5820300810849 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		6D73063F1AB64EEA00810849 /* RunningGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningGame.h; sourceTree = "<group>"; };
+		6D7306401AB64EEA00810849 /* RunningGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				6D73062F1AB555B100810849 /* main.m */,
+				6D73063F1AB64EEA00810849 /* RunningGame.h */,
+				6D7306401AB64EEA00810849 /* RunningGame.m */,
+				6D7306361AB5816D00810849 /* Tokens.h */,
+				6D7306371AB5816D00810849 /* Tokens.m */,
+				6D7306391AB5820300810849 /* Player.h */,
+				6D73063A1AB5820300810849 /* Player.m */,
 			);
 			path = SnakesOnALadder;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D7306301AB555B100810849 /* main.m in Sources */,
+				6D73063B1AB5820300810849 /* Player.m in Sources */,
+				6D7306381AB5816D00810849 /* Tokens.m in Sources */,
+				6D7306411AB64EEA00810849 /* RunningGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
